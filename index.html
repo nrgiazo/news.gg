@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Status</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .status-container {
+            text-align: center;
+        }
+
+        .status-indicator {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .online {
+            background-color: #4CAF50; /* Green */
+            font-family: "Poppins", sans-serif;
+        }
+
+        .offline {
+            background-color: #F44336; /* Red */
+            font-family: "Poppins", sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 16px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+        }
+    
+        #last-update {
+            margin-top: 20px;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="status-container">
+        <h1>News.gg Bot Status</h1>
+        <div class="status-indicator online"></div>
+        <span class="online">Online</span>
+
+        <div class="status-indicator" id="status-indicator"></div>
+        <span id="status-text"></span>
+        <p id="last-update">Last update: March 4, 2024</p>
+    </div>
+
+</body>
+</html>
